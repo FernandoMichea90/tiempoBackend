@@ -1,7 +1,6 @@
 const express=require('express')
 const app =express();
 const cors =require('cors');
-
 const route=require('./Router/index');
 const mongoose=require('mongoose')
 const bodyParser=require('body-parser');
@@ -54,7 +53,7 @@ const port =process.env.PORT || 5001
 app.listen(port,host,()=>
 {
     //console.log(process.env.PORT);
-    console.log(port);
+    //console.log(port);
     
     console.log(process.env.DB_URL);
     console.log(process.env.FRONTEND_URL);
