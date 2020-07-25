@@ -50,7 +50,7 @@ app.use('/',route())
 
 const host =process.env.HOST || 'localhost'
 const port =process.env.PORT || 5000
-app.listen(port,host,()=>
+app.listen(process.env.PORT, '0.0.0.0',()=>
 {
     //console.log(process.env.PORT);
     //console.log(port);
