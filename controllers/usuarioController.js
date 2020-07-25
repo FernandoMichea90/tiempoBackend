@@ -1,6 +1,7 @@
-const Usuario=require('../models/Usuario');
-const jwt=require('jsonwebtoken');
+const Usuario=require('../models/Usuario')
 const bcrypt=require('bcrypt');
+const jwt=require('jsonwebtoken');
+
 
 
 exports.nuevoUsuario = async (req, res, next) => {
