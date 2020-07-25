@@ -9,7 +9,7 @@ require('dotenv').config({path:'variables.env'})
 mongoose.Promise=global.Promise;
 mongoose.connect(process.env.DB_URL,
 {
-    useUnifiedTopology: true,
+    useCreateIndex: true,
     useNewUrlParser: true
 })
 
@@ -43,7 +43,7 @@ const corsOption={
 
 }
 
-app.use(cors());
+app.use(cors(corsOption));
 
 
 app.use('/',route())
